@@ -1,0 +1,19 @@
+{
+  "name": "decaying-todo",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "postinstall": "node scripts/patch-android-build.mjs",
+    "web:sync": "node scripts/sync-web.mjs",
+    "cap:sync": "npm run web:sync && cap sync android && node scripts/patch-android-build.mjs",
+    "android:build": "npm run cap:sync && cd android && gradlew.bat assembleRelease"
+  },
+  "dependencies": {
+    "@capacitor/android": "8.4.1",
+    "@capacitor/core": "8.4.1"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "8.4.1"
+  }
+}

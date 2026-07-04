@@ -1,0 +1,11 @@
+{
+  "appId": "io.github.chosuicide.decay",
+  "appName": "DECAY",
+  "webDir": "www",
+  "android": {
+    "backgroundColor": "#080a0b"
+  },
+  "server": {
+    "androidScheme": "https"
+  }
+}

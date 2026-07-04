@@ -2,3 +2,13 @@ docs/superpowers/
 decay-redesign-today.png
 decaying-todo-v*.zip
 .worktrees/
+node_modules/
+www/
+android/.gradle/
+android/app/build/
+android/local.properties
+android/keystore.properties
+*.jks
+*.keystore
+*.apk
+*.idsig
